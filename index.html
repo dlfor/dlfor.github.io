@@ -6,10 +6,21 @@
 
 </body>
 </html>
-<script language="JavaScript" type="text/javascript">
-function winClose() {
-    window.setTimeOut("window.close();",5000)
+<html>
+<head>
+<script>
+function loaded()
+{
+    alert("Beep!");
+    window.setTimeout(CloseMe, 500);
+}
+
+function CloseMe() 
+{
+    window.close();
 }
 </script>
-
-<body onload="winClose();">
+</head>
+<body onLoad="loaded()">
+Hello!
+</body>
